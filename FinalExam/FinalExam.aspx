@@ -10,6 +10,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <asp:DropDownList ID="ddl_Area" runat="server" AutoPostBack="true" OnSelectedIndexChanged="ddl_Area_SelectedIndexChanged">
+            </asp:DropDownList>
+            <br />
+            <br />
+            <asp:DropDownList ID="ddl_Place" runat="server">
+            </asp:DropDownList>
+            <br />
         </div>
     </form>
 </body>
