@@ -17,6 +17,7 @@
             <asp:DropDownList ID="ddl_Place" runat="server">
             </asp:DropDownList>
             <br />
+            <asp:Button ID="Button1" runat="server" Text="Button" />
         </div>
     </form>
 </body>
