@@ -18,9 +18,7 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Button ID="Btn_Search" runat="server" Text="搜尋名產" OnClick="Btn_Search_Click" />
-            <br />
-            <br />
+            <asp:Label ID="Lb_Name" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>

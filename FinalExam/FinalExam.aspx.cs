@@ -13,6 +13,23 @@ namespace FinalExam
         string[,] sa_Place = new string[3, 6] { { "基隆", "台北", "新北" ,"桃園","宜蘭","新竹"},
                                                 { "苗栗", "台中", "南投" ,"彰化","雲林","花蓮"},
                                                 { "嘉義", "台南", "高雄" ,"屏東","台東",null} };
+        string[,] sa_Prod = new string[3, 6] { { "基隆：鳳梨酥、海產"
+                                                ,"台北：陽明山橘子"
+                                                ,"新北：淡水海產、鶯歌陶磁、文山茶" 
+                                                ,"桃園：大溪豆乾、筍乾"
+                                                ,"宜蘭：蜜餞"
+                                                ,"新竹：米粉、柿餅、貢丸"},
+                                                { "苗栗：大湖草莓、三義木雕、福菜"
+                                                , "台中：大甲草蓆、梧棲海鮮、高山水果、巨峰葡萄、太陽餅、鳳梨酥、牛肉乾、豆腐乾"
+                                                , "南投：竹山竹製品、鹿谷茶葉、高山水果"
+                                                ,"彰化：鹿港海鮮、彰化北斗肉圓、田尾永靖花卉、員林蜜餞、巨峰葡萄"
+                                                ,"雲林：草莓、花生、西螺醬油、稻米"
+                                                ,"花蓮：大理石、花蓮薯、麻薯"},
+                                                { "嘉義：新港飴、布袋海產、稻米"
+                                                , "台南：肉粽、擔仔麵、「棺材板」"
+                                                , "高雄：美濃紙傘、岡山羊肉、豆瓣醬"
+                                                ,"屏東：萬巒豬腳、楓港海鮮、椰子"
+                                                ,"台東：太麻金針、柴魚、關山米、釋迦果",null} };
         protected void Page_Load(object sender, EventArgs e)
         {
             if (IsPostBack == false)
@@ -41,6 +58,7 @@ namespace FinalExam
                 for (int i_ct = 0; i_ct < 6; i_ct++)
                 {
                     o_Item = new ListItem(sa_Place[0, i_ct], sa_Place[0, i_ct]);
+                    Lb_Name.Text = sa_Prod[0, i_ct];
                     ddl_Place.Items.Add(o_Item);
                 }
             }
@@ -49,7 +67,8 @@ namespace FinalExam
                 for (int i_ct = 0; i_ct < 6; i_ct++)
                 {
                     o_Item = new ListItem(sa_Place[1, i_ct], sa_Place[1, i_ct]);
-                    ddl_Place.Items.Add(o_Item);
+                    ddl_Place.Items.Add(o_Item); 
+                    Lb_Name.Text = sa_Prod[1, i_ct];
                 }
             }
             else
@@ -58,13 +77,9 @@ namespace FinalExam
                 {
                     o_Item = new ListItem(sa_Place[2, i_ct], sa_Place[2, i_ct]);
                     ddl_Place.Items.Add(o_Item);
+                    Lb_Name.Text =sa_Prod[2, i_ct];
                 }
             }
-        }
-
-        protected void Btn_Search_Click(object sender, EventArgs e)
-        {
-            
         }
     }
 }
