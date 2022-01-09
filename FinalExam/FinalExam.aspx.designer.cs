@@ -42,12 +42,12 @@ namespace FinalExam
         protected global::System.Web.UI.WebControls.DropDownList ddl_Place;
 
         /// <summary>
-        /// Btn_Search 控制項。
+        /// Lb_Name 控制項。
         /// </summary>
         /// <remarks>
         /// 自動產生的欄位。
         /// 若要修改，請將欄位宣告從設計工具檔案移到程式碼後置檔案。
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btn_Search;
+        protected global::System.Web.UI.WebControls.Label Lb_Name;
     }
 }
