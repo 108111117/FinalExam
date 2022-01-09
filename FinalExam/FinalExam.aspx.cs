@@ -45,7 +45,6 @@ namespace FinalExam
                 {
                     o_Item = new ListItem(sa_Place[0, i_ct], sa_Place[0, i_ct]);
                     ddl_Place.Items.Add(o_Item);
-                    Lb_Name.Text = sa_Prod[0, 0];
                 }
 
             }
@@ -81,76 +80,9 @@ namespace FinalExam
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Btn_Search_Click(object sender, EventArgs e)
         {
-            if (ddl_Place.SelectedValue == "基隆")
-            {
-                Lb_Name.Text = sa_Prod[0, 0];
-            }
-            else if (ddl_Place.SelectedValue == "台北")
-            {
-                Lb_Name.Text = sa_Prod[0, 1];
-            }
-            else if (ddl_Place.SelectedValue == "新北")
-            {
-                Lb_Name.Text = sa_Prod[0, 2];
-            }
-            else if (ddl_Place.SelectedValue == "桃園")
-            {
-                Lb_Name.Text = sa_Prod[0, 3];
-            }
-            else if (ddl_Place.SelectedValue == "宜蘭")
-            {
-                Lb_Name.Text = sa_Prod[0, 4];
-            }
-            else if (ddl_Place.SelectedValue == "新竹")
-            {
-                Lb_Name.Text = sa_Prod[0, 5];
-            }
-            else if (ddl_Place.SelectedValue == "苗栗")
-            {
-                Lb_Name.Text = sa_Prod[1, 0];
-            }
-            else if (ddl_Place.SelectedValue == "台中")
-            {
-                Lb_Name.Text = sa_Prod[1, 1];
-            }
-            else if (ddl_Place.SelectedValue == "南投")
-            {
-                Lb_Name.Text = sa_Prod[1, 2];
-            }
-            else if (ddl_Place.SelectedValue == "彰化")
-            {
-                Lb_Name.Text = sa_Prod[1, 3];
-            }
-            else if (ddl_Place.SelectedValue == "雲林")
-            {
-                Lb_Name.Text = sa_Prod[1, 4];
-            }
-            else if (ddl_Place.SelectedValue == "花蓮")
-            {
-                Lb_Name.Text = sa_Prod[1, 5];
-            }
-            else if (ddl_Place.SelectedValue == "嘉義")
-            {
-                Lb_Name.Text = sa_Prod[2, 0];
-            }
-            else if (ddl_Place.SelectedValue == "台南")
-            {
-                Lb_Name.Text = sa_Prod[2, 1];
-            }
-            else if (ddl_Place.SelectedValue == "高雄")
-            {
-                Lb_Name.Text = sa_Prod[2, 2];
-            }
-            else if (ddl_Place.SelectedValue == "屏東")
-            {
-                Lb_Name.Text = sa_Prod[2, 3];
-            }
-            else if (ddl_Place.SelectedValue == "台東")
-            {
-                Lb_Name.Text = sa_Prod[2, 4];
-            }
+            
         }
     }
 }
