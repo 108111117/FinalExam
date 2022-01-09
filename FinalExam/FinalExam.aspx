@@ -17,7 +17,10 @@
             <asp:DropDownList ID="ddl_Place" runat="server">
             </asp:DropDownList>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <br />
+            <asp:Button ID="Btn_Search" runat="server" Text="搜尋名產" />
+            <br />
+            <br />
         </div>
     </form>
 </body>
