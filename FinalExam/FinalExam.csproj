@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="FinalExam.aspx" />
     <Content Include="Global.asax" />
+    <None Include="instruction.md" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
