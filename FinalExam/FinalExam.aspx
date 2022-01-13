@@ -16,7 +16,10 @@
             <asp:DropDownList ID="ddl_Place" runat="server">
             </asp:DropDownList>
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Button" />
+            <br />
+            <asp:Button ID="Button1" runat="server" Text="搜尋名產" OnClick="Button1_Click" />
+            <br />
+            <asp:Label ID="Lb_Name" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>
